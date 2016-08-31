@@ -1,0 +1,30 @@
+MakeItStand: BalencingShapesFor3DFabrication
+
+Authors: Romain Prevost, Emily Whiting, ETH Zurich
+
+Purpose: To change the internal structure of a 3D printed object so that it can
+stand on its own. Formulates Balance Optimization as an Energy Minimization
+formula.
+
+Asymmetric Balance -> Aesthetic
+
+Carves and Deforms the object to meet equilibrium
+-> Interactive design, user can specify if it is not correct
+Considers suspended and standing objects on flat surfaces
+
+Previous Work:
+  Printability of an object can be understood through voxelization
+  Plausible not feasible -> center of mass approximated by a sum of masses
+    located at the barycenter of the bones
+  Consider stability of an asembledge of parts consisting of simple solids
+
+ToDo:: Continue Reading
+
+future reads:
+  BÄCHER, M., BICKEL, B., JAMES, D. L., AND PFISTER, H. 2012. Fabricating articulated characters from skinned meshes. ACM Trans. Graph. 31, 4.
+  BOTSCH, M., AND SORKINE, O. 2008. On linear variational surfacedeformationmethods. IEEETrans.Vis.Comput.Graph.14, 1, 213–230.
+  DEROUET-JOURDAN, A., BERTAILS-DESCOUBES, F., AND THOLLOT, J. 2010. Stableinversedynamiccurves. ACMTrans. Graph., 137:1–137:10.
+  SHI, X., ZHOU, K., TONG, Y., DESBRUN, M., BAO, H., AND GUO, B. 2007. Meshpuppetry: cascadingoptimizationofmesh deformation with inverse kinematics. ACM Trans. Graph. 26, 3.
+  VOUGA, E., HÖBINGER, M., WALLNER, J., AND POTTMANN, H. 2012. Design of self-supporting surfaces. ACM Trans. Graph. 31, 4, 87:1–87:11.
+  ZHU, L., XU, W., SNYDER, J., LIU, Y., WANG, G., AND GUO, B. 2012. Motion-guidedmechanicaltoymodeling. ACMTrans. Graph. 31, 6, 127:1–127:10.
+  BÄCHER, M., BICKEL, B., JAMES, D. L., AND PFISTER, H. 2012. Fabricating articulated characters from skinned meshes. ACM Trans. Graph. 31, 4.

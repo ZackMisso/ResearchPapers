@@ -1,0 +1,5 @@
+StableInverseDynamicCurves
+
+Authors: Alexandre Derouet-Jourdan Florence Bertails - INRIA / LJK
+
+To Be Read
