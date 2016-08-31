@@ -1,0 +1,64 @@
+FastLatticeShapeMatchingForRobustRealTimeDeformation
+
+Authors: Alec R. Rivers Doug L. James : Cornell
+
+Purpose: Robust Approximation of Volumetric, large-deformation dynamics
+  for real-time or large-scale offline simulations
+
+Lattice Shape Matching -> extension of Deformable Shape Matching to regular
+  lattices with embedded geometry
+What is Deformable Shape Matching?
+
+lattice vertices are smoothed by convolution of rigid shape matching operators
+  on local lattice regions.
+
+per-vertex cost scale cubically with region width
+
+Fast Lattice Shape Matching -> exploits inherent summation redundancy of shape
+  matching and can provide large region matching at constant per-vertex cost
+
+Use rigid shape matching transforms that use regional estimates of rotation
+  and translation at every lattice location to provide detailed deformation
+  smoothing without domain boundary artifacts.
+
+naive lattice shape matching with modest filter widths is O(N^3)
+
+Lattice-based shape deformers cleanly separate deformation modeling complexity
+  from geometric complexity and surface representation.
+
+Read about semi-implicit integration
+
+What is trilinear interpolation?
+
+Lattice deformation is controlled by unit point-mass particles placed at the
+  lattice cell vertex
+
+Each particle has a list of neighbors that share at least one lattice cell
+  with it.
+
+Need to make sire particles in many regions are not weighted more than others
+
+The geometric models being simulated are analogous to elastically deformable
+  models.
+
+
+
+
+Papers to Read:
+  M¨ULLER, M., HEIDELBERGER, B., TESCHNER, M., AND GROSS, M. 2005. Meshless Deformations Based on Shape Matching. ACM Trans. on Graphics 24, 3 (Aug.), 471–478.
+  CROW, F. C. 1984. Summed-area Tables for Texture Mapping. In ComputerGraphics(Proc.ofSIGGRAPH84),vol.18,207–212
+  WEISS, B. 2006. Fast Median and Bilateral Filtering. ACM Trans. on Graphics 25, 3 (July), 519–526.
+  HENSLEY, J., SCHEUERMANN, T., COOMBE, G., SINGH, M., AND LASTRA, A. 2005. Fast Summed-Area Table Generation anditsApplications. ComputerGraphicsForum24,3,547–556.
+  COQUILLART, S. 1990. Extended Free-Form Deformation: A Sculpturing Tool for 3D Geometric Modeling. In Computer Graphics (Proc. of SIGGRAPH 90), vol. 24, 187–196.
+  SEDERBERG, T. W., AND PARRY, S. R. 1986. Free-Form Deformation of Solid Geometric Models. In Computer Graphics (Proc. SIGGRAPH 86), vol. 20, 151–160.
+  FALOUTSOS, P., VAN DE PANNE, M., AND TERZOPOULOS, D. 1997. DynamicFree-FormDeformationsforAnimationSynthesis. IEEE Trans. on Visualization and Computer Graphics 3, 3 (July - September), 201–214.
+  GIBSON, S. F., AND MIRTICH, B. 1997. ASurveyofDeformable ModelsinComputerGraphics. Tech.Rep.TR-97-19,Mitsubishi Electric Research Laboratories, Cambridge, MA, November.
+  MOLINO, N., BAO, Z., AND FEDKIW, R. 2004. A virtual node algorithm for changing mesh topology during simulation. ACM Trans. on Graphics 23, 3 (Aug.), 385–392.
+  SIFAKIS, E., NEVEROV, I., AND FEDKIW, R. 2005. Automatic determination of facial muscle activations from sparse motion capture marker data. ACM Trans. on Graphics 24, 3, 417–425.
+  BARBIˇ C, J., AND JAMES, D. 2005. Real-Time Subspace Integration for St. Venant-Kirchhoff Deformable Models. ACM Trans. on Graphics 24, 3 (Aug.), 982–990.
+  CAPELL, S., GREEN, S., CURLESS, B., DUCHAMP, T., AND POPOVI´ C, Z. 2002. Interactive Skeleton-Driven Dynamic Deformations. ACM Trans. on Graphics 21, 3 (July), 586–593.
+  M¨ULLER, M., DORSEY, J., MCMILLAN, L., JAGNOW, R., AND CUTLER, B. 2002. Stable Real-Time Deformations. In ACM SIGGRAPH Symposium on Computer Animation, 49–54.
+  DEBUNNE, G., DESBRUN, M., CANI, M.-P., AND BARR, A. H. 2001. Dynamic Real-Time Deformations Using Space & Time Adaptive Sampling. In Proc. of ACM SIGGRAPH 2001, 31–36.
+  GRINSPUN, E., KRYSL, P., AND SCHR¨ODER, P. 2002. CHARMS: A Simple Framework for Adaptive Simulation. ACM Trans. on Graphics 21, 3 (July), 281–290.
+  GIBSON, S. F., AND MIRTICH, B. 1997. ASurveyofDeformable ModelsinComputerGraphics. Tech.Rep.TR-97-19,Mitsubishi Electric Research Laboratories, Cambridge, MA, November
+  JAMES, D. L., BARBIˇ C, J., AND TWIGG, C. D. 2004. Squashing Cubes: Automating Deformable Model Construction for Graphics. In Proc. of the SIGGRAPH 2004 Conference on Sketches & Applications, ACM Press.

@@ -2,4 +2,30 @@ EvolvingSoftRobotsWithMultipleMaterials
 
 Authors: Nick Cheney, Robert MacCurdy, Jeff Clune
 
-To Be Read
+Limit to Rigid Body Morphologies. Actual organisms are soft
+
+Direct Encodings lack the regularity and evolvability necessary to
+  consistently produce regular morphologies and coordinated behavior.
+
+CPPN-NEAT has been shown to create complex regularities such as symmetry
+  and repetition
+
+Many genetic encodings do not scale well to high parameter spaces.
+Large computational cost in in simulating flexible materials
+Evolutionary algorithms excel at multiple competing and difficult-to-define
+  objectives
+
+What is the MOLE algorithm?
+How to evolve material properties?
+
+NTS: Find soft body printing papers
+
+volumetric actuation -> expanding contracting
+VoxCAD
+
+Papers to Read:
+  K. O. Stanley. Compositional pattern producing networks: A novel abstraction of development.Genetic Programming and Evolvable Machines, 8(2):131–162, 2007.
+  K. O. Stanley, D. B. D’Ambrosio, and J. Gauci. A hypercube-based encoding for evolving large-scale neural networks. Artiﬁcial Life, 15(2):185–212, 2009
+  J.-B. Mouret and J. Clune. An algorithm to create phenotype-ﬁtness maps. Proc. of the Artiﬁcial Life Conf., pages 593–594, 2012.
+  J. Clune, J.-B. Mouret, and H. Lipson. The evolutionary origins of modularity. Proc. of the Royal Society B, 280(20122863), 2013.
+  J. Lehman and K. O. Stanley. Evolving a diversity of virtual creatures through novelty search and local competition. In Proc. of the Genetic & Evolutionary Computation Conf., pages 211–218. ACM, 2011.

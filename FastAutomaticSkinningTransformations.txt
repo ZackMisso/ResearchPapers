@@ -1,0 +1,30 @@
+FastAutomaticSkinningTransformations
+
+Authors: Alec Jacobson, Ilya Baran, Ladislav Kavan, Disney, ETH Zurich
+
+Purpose: Proposed system where the user defines the degrees of freedom
+  and the rest are automatically inferred using nonlinear, rigidity energies
+
+What is Fast Variational Shape Modeling?
+
+Articulation has two steps:
+  Rigging - setting how the parameters control the geometry
+  Deformation - calculates the shape based on parameters
+
+Joint angles are usually the most popular articulation parameter
+Others:
+  free-form, blend shapes, cages, etc.
+
+Most common method is Linear Blend Skinning (LBS)
+  articulation parameters are affine transforms specified by a handle
+
+handles used to be just bones but now there are point handles, region handles,
+  cage vertices, and abstract handles.
+
+In some cases it is only desirable to specify the translational component
+  Ex. Motion Capture unsure of spine configuration
+
+This method computes the unspecified degrees of freedom by minimizing the
+  elastic energy
+
+Papers to Read:
