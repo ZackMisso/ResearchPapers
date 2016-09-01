@@ -16,7 +16,7 @@ Others:
   free-form, blend shapes, cages, etc.
 
 Most common method is Linear Blend Skinning (LBS)
-  articulation parameters are affine transforms specified by a handle
+  articulation parameters are affine transforms specified by a handlefiral441
 
 handles used to be just bones but now there are point handles, region handles,
   cage vertices, and abstract handles.
@@ -27,4 +27,59 @@ In some cases it is only desirable to specify the translational component
 This method computes the unspecified degrees of freedom by minimizing the
   elastic energy
 
+Express energy only in terms of handle transformations
+Uses input skinning weights to determine parts of the shape that are likely
+  to be transformed similarly and simplify the deformation energy accordingly
+
+Computing missing degrees of freedom -> similar to inverse kinematics but shape
+  aware
+
+Inverse Kinematics is performed on the skeleton not the shape
+IK cannot handle disconnected skeletons or surface handles
+
+Shape Deformation Research has concentrated on two main fronts:
+  modelling physically plausible deformations
+  exposing very fast and parallelizable deformations
+
+Nonlinear energies are harder to optimize but give higher quality deformations
+
+Quadratic energies that lead to linear optimizations are fast, but lead
+  to linearization artifacts
+
+What are dense subspace models?
+
+influence of cage handles on points is done by using barycentric coordinates
+
+How to define the influence of each handle on every point?
+
+What is an isoline?
+
+Clustering vertices in weight space because vertices with similar weights
+  will have similar deformation gradients which allows using a small number
+  of rotation groups.
+
+Many linear deformation problems suffer from the problem of "translation-
+  sensitivity"
+
 Papers to Read:
+  BOTSCH, M., PAULY, M., WICKE, M., AND GROSS, M. 2007. Adaptivespacedeformationsbasedonrigidcells. Comput.Graph. Forum 26, 3, 339–347.
+  KAVAN, L., COLLINS, S., ZARA, J., AND O’SULLIVAN, C. 2008. Geometric skinning with approximate dual quaternion blending. ACM Trans. Graph. 27, 4, 105:1–105:23.
+  KAVAN, L., COLLINS, S., AND O’SULLIVAN, C. 2009. Automatic linearization of nonlinear skinning. In Proc. I3D, 49–56.
+  KAVAN, L., SLOAN, P., AND O’SULLIVAN, C. 2010. Fast and efﬁcient skinning of animated meshes. Comput. Graph. Forum 29, 2, 327–336.
+  FORSTMANN, S., AND OHYA, J. 2006. Fast skeletal animation by skinnedarc-splinebaseddeformation. InProc.EUROGRAPHICS, Short papers.
+  FORSTMANN, S., OHYA, J., KROHN-GRIMBERGHE, A., AND MCDOUGALL, R. 2007. Deformation styles for spline-based skeletal animation. In Proc. SCA, 141–150.
+  BOTSCH, M., AND SORKINE, O. 2008. On linear variational surface deformation methods. IEEE Trans. Vis. Comput. Graph. 14, 1, 213–230.
+  IGARASHI, T., MOSCOVICH, T., AND HUGHES, J. F. 2005. Asrigid-as-possible shape manipulation. ACM Trans. Graph. 24, 3, 1134–1141.
+  SORKINE, O., AND ALEXA, M. 2007. As-rigid-as-possible surface modeling. In Proc. SGP, 109–116.
+  LIU, L., ZHANG, L., XU, Y., GOTSMAN, C., AND GORTLER, S. J. 2008. Alocal/globalapproachtomeshparameterization. Comput. Graph. Forum 27, 5, 1495–1504.
+  CHAO, I., PINKALL, U., SANAN, P., AND SCHR¨ODER, P. 2010. A simple geometric model for elastic deformations. ACM Trans. Graph. 29, 4, 38:1–38:6.
+  GILLES, B., BOUSQUET, G., FAURE, F., AND PAI, D. 2011. Frame-based elastic models. ACM Trans. Graph. 30, 2, 15:1– 15:12.
+  FAURE, F., GILLES, B., BOUSQUET, G., AND PAI, D. K. 2011. Sparse meshless models of complex deformable solids. ACM Trans. Graph. 30, 4, 73:1–73:10.
+  BARAN, I., AND POPOVI´ C, J. 2007. Automatic rigging and animation of 3D characters. ACM Trans. Graph. 26, 3, 72:1–72:8.
+  WAREHAM, R., AND LASENBY, J. 2008. BoneGlow: Animproved method for the assignment of weights for mesh deformation. Articulated Motion and Deformable Objects, 63–71.
+  JACOBSON, A., BARAN, I., POPOVI´ C, J., AND SORKINE, O. 2011. Bounded biharmonic weights for real-time deformation. ACM Trans. Graph. 30, 4, 78:1–78:8.
+  AU, O. K.-C., FU, H., TAI, C.-L., AND COHEN-OR, D. 2007. Handle-aware isolines for scalable shape editing. ACM Trans. Graph. 26, 3, 83.
+  SHI, X., ZHOU, K., TONG, Y., DESBRUN, M., BAO, H., AND GUO, B. 2007. Mesh puppetry: cascading optimization of mesh deformation with inverse kinematics. ACM Trans. Graph. 26, 3, 81:1–81:10.
+  PEKELNY, Y., AND GOTSMAN, C. 2008. Articulated object reconstruction and markerless motion capture from depth video. Comput. Graph. Forum 27, 2, 399–408.
+  HUANG, J., SHI, X., LIU, X., ZHOU, K., WEI, L.-Y., TENG, S.-H., BAO, H., GUO, B., AND SHUM, H.-Y. 2006. Subspace gradient domain mesh deformation. ACM Trans. Graph. 25, 3, 1126–1134.
+  LANDRENEAU, E., AND SCHAEFER, S. 2010. Poisson-based weightreductionofanimatedmeshes. Comput.Graph.Forum29, 6, 1945–1954.
