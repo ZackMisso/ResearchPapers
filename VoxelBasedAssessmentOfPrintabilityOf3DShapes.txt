@@ -1,0 +1,80 @@
+VoxelBasedAssessmentOfPrintabilityOf3DShapes
+
+Authors: Alexandru Telea, Andrei Jalba
+
+What is geodesic analysis?
+
+Since 3D printing works in raster fashion voxel approximations
+can be used.
+
+This paper relies on multi-scale morphology and geodesic analysis
+
+Shape details thinner than the printer resolution results
+  in empty voxels
+
+local thickness detection is a necessary part of printability
+  detection
+
+Previous work:
+  Define local thickness at point p as the diameter of the
+    largest inscribed ball B centered at x that contains p
+  This ^ was implemented by evaluating the distance transform
+    over the skeleton (or medial axis) and marking all points
+    with the maximum of D|Om.
+    This method requires a robust and exact medial axis
+      transform, which is prohibitively expensive for large voxel
+      models.
+  Other ides was to compute thickness between surface pairs
+    by minimal-length surface-to-surface paths using a PDE-based
+    approach.
+    Fast but no extension to higher-genus models.
+  Mesh-based methods
+    require a clean mesh with no self-intersections
+    no volumetric object representation
+    only work well on simple shapes and hard to implement
+
+  We do not have a digitization process under our control
+  and we have a quality criteria.
+  We must assess whether a given polygonal model fullfils
+    these criteria under the given digitization.
+
+  A 3D shape is printable when the removal of its thin regions
+    do not create critical topological or geometrical changes.
+
+  Critical changes are defined as:
+    disappearance of salient detail, or spikes
+    disconnection of large shape fragments by removal of bridges
+    creation of large holes, also called tunnels
+
+  Use previous voxelization method based on binvox
+
+  Voxelization resolution used in practice exceeds that of the
+    3D printer, so small potential errors caused by the voxelization
+    methods should have no effect on our assessment.
+
+  Detect the locally thin areas. This can be formulated as a top-hat
+    transform in the context of multi-scale morphology.
+
+  Erode then dilate the object
+
+  Take the set difference between the morphed object and the input
+    and you have the parts that do not get printed
+
+  Classify voxels into four categories
+    thin
+    rump
+    interface
+    boundary
+
+To Read:
+   R. Dougherty and K. Kunzelmann. Computing local thickness of 3D structures with ImageJ, 2007. Proc. Microscopy & Microanalysis Meeting, Ft. Lauderdale, Florida, Aug. 5-9, 2009, www.optinav.com/LocalThicknessEd.pdf.
+   A. Yezzi and J. Prince. An Eulerian PDE approach for computing tissue thickness. IEEE Trans. Med. Imag., 22(10):1332–1339, 2003.
+   Y. Sato, K. Nakanishi, H. Tanaka, T. Nishii, N. Sugano, H. Nakamura, T. Ochi, and S. Tamura. Limits to the accuracy of 3D thickness measurement in magnetic resonance images. In Proc. MICCAI, volume 2208, pages 803–810. Springer, 2010.
+   Geometric Global. GeomCaliper tool, 2010. geomcaliper.geometricglobal.com.
+   J. Lambourne, D. Brujic, Z. Djuric, and M. Ristic. Calculation and visualisation of the thickness of 3D CAD models. In Proc. SMI, pages 107–112, 2005.
+   P. Stelldinger and K. Terzic. Digitization of non-regular shapes in arbitrary dimensions. Image and Vision Computing, 26(10):1338–1346, 2008.
+   F. Nooruddin and G. Turk. Simpliﬁcation and repair of polygonal models using volumetric techniques. IEEE TVCG, 9(2):191–205, 2003.
+   P. Min. binvox voxelizer, 2010. www.cs.princeton.edu/∼min/binvox.
+   Roger Brockett and Petros Maragos. Evolution equations for continuous-scale morphological ﬁltering. IEEE Trans. Sig. Proc., 42(12):3377–3386, 1994.
+   Petros Maragos. Diﬀerential morphology and image processing. IEEE Trans. Image Processing, 5(6):922–937, 1996.
+   J. Mullikin and P. Verbeek. Surface area estimation of digitized planes. Bioimaging, (1):6–16, 1993. 

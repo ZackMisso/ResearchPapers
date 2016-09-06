@@ -1,0 +1,70 @@
+MultiMaterialTopologicalOptimizationofStructuralMechanisms
+
+Authors: Jonathon Hiller, Hod Lipson Cornell
+
+Purpose: Multi-Material 3D Printing permits the freeform fabrication of
+  complex spatial arrangements. This space is not easily searched using
+  conventional topological optimization methods such as homogenization.
+  Design substructures using evolutionary techniques tailored for custom
+  functionality.
+
+What is homogenization?
+
+They demonstrate the use of evolutionary algorithms to design the 3D
+  material distribution of a cantilever beam to meet high-level functional
+  goals.
+
+Freeform fabrication technologies:
+  Subtractive processes like Computer Numerical Controlled (CNC) milling
+    selectively remove material from a homogeneous block. Overhangs and
+    concave features are possible, but internal cavities and complicated
+    topologies often require prohibitive tooling and complexity.
+  Additive Manufacturing (3D printing, solid freeform fabrication) processes
+    selectively build up a freeform object layer-by-layer, placing temporary
+    supports as needed. However limited to creating parts of a single,
+    homogeneous material.
+
+Maximize stiffness of multi material structures
+
+homogenization results are generally limited to optimizing overall deflection
+  or force. As more complexity is added, homogenization approaches become
+  unwieldy.
+
+Genetic algorithms have been tried in the past and failed because:
+  homogenization method greatly outperforms genetic algorithms in the single
+    objective structural optimization problems
+  Success of GAs strongly depends on the representations of Genotypes and
+    Phenotypes.
+  Previous representations scaled poorly to large structures
+
+Genotype:
+  series of frequency amplitudes at harmonic multiples
+
+Phenotype:
+  applying the inverse discrete fourier transform to the series
+
+By representing a 3D object as a3D matrix of frequency amplitude
+  components, a number of advantages are realized.
+    the ability to render the genotype at any resolution.
+    complete dimensional independence
+    and naturally available symmetry.
+
+What is the inverse discrete Fourier transform?
+What is the discrete cosine transform?
+
+Multidimensional fourier transforms such as the DCT are also linearly
+  independent.
+
+A 2D spatial object is constructed by applying the inverse DCT
+  independently to each row then to each column of a 2D matrix.
+
+To Read:
+  Beaman, J. J., Marcus, H. L., Bourell, D. L., Barlow, J. W., Crawford, R. H. and McAlea, K. P. Solid Freeform Fabrication: A New Direction in Manufacturing. Kluwer Academic Publishers, 1997
+  *Malone, E., Rasa, K., Cohen, D., Isaacson, T., Lashley, H. and Lipson, H. "Freeform fabrication of zinc-air batteries and electromechanical assemblies." Rapid Prototyping Journal, Vol. 10, 2004, pp. 58-69.
+  *Objet Geometries inc, http://www.objet.com (Accessed: January 28, 2009)
+  Díaz, A. and Lipton, R. "Optimal material layout for 3D elastic structures." Structural and Multidisciplinary Optimization, Vol. 13, 1997, pp. 60-64.
+  Fernandes, P., Guedes, J. M. and Rodrigues, H. "Topology optimization of three-dimensional linear elastic structures with a constraint on "perimeter"." Computers & Structures, Vol. 73, 1999, pp. 583-594.
+  Jakiela, M. J., Chapman, C., Duda, J., Adewuya, A. and Saitou, K. "Continuum structural topology design with genetic algorithms." Computer Methods in Applied Mechanics and Engineering, Vol. 186, 2000, pp. 339-356.
+  Kane, C. "Topological Optimum Design using Genetic Algorithms." Control and Cybernetics, Vol. 25, 1996, pp. 1059-1088.
+  Kane, C. and Schoenauer, M. Genetic operators for twodimentional shape optimization. City, 1996.
+  Kicinger, R., Arciszewski, T. and Jong, K. D. "Evolutionary computation and structural design: A survey of the state-of-theart." Computers & Structures, Vol. 83, 2005, pp. 1943-1978

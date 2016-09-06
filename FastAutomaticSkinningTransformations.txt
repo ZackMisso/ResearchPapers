@@ -16,7 +16,7 @@ Others:
   free-form, blend shapes, cages, etc.
 
 Most common method is Linear Blend Skinning (LBS)
-  articulation parameters are affine transforms specified by a handlefiral441
+  articulation parameters are affine transforms specified by a handle
 
 handles used to be just bones but now there are point handles, region handles,
   cage vertices, and abstract handles.
