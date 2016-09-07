@@ -1,0 +1,54 @@
+FabricatingSpatially-VaryingSubsurfaceScattering
+
+http://research.microsoft.com/en-us/um/people/yuedong/project/fabscat/a62dong.pdf
+
+BSSRDF - BIDIRECTIONAL SUBSURFACE SCATTERING REFLECTANCE DISTRIBUTION FUNCITON
+  describes light transport between pairs of surface points.
+
+layer by layer approach
+
+Decouple the non-local BSSRDF into local scattering profiles and determine the
+  material composition under each surface point with the scattering profile
+  defined on each point separately.
+
+Model the light transport between surface points using a diffusion process and
+  optimize the thickness of the layers at each location using an adapted inverse
+  diffusion optimization
+
+Solving for heterogeneous materials amounts to a large non-linear optimization
+  problem
+
+Extends the approach in Wang 2008 a
+
+B-Rep: representing a solid as the boundary between solid and non solid.
+  As a collection of surfaces.
+
+To Be Continued
+
+To Be Read:
+  MATUSIK, W., AJDIN, B., GU, J., LAWRENCE, J., LENSCH, H. P. A., PELLACINI, F., AND RUSINKIEWICZ, S. 2009. Printing spatially-varying reﬂectance. ACM Trans. Graph. 28, 3, 1–6.
+  NICODEMUS, F. E., RICHMOND, J. C., HSIA, J. J., GINSBERG, I. W., AND LIMPERIS, T. 1977. Geometrical Considerations andNomenclatureforReﬂectance.NationalBureauofStandards (US).
+  ISHIMARU, A. 1978. WavePropagationandScatteringinRandom Media. Academic Press.
+  DEBEVEC, P., HAWKINS, T., TCHOU, C., DUIKER, H.-P., SAROKIN, W., AND SAGAR, M. 2000. Acquiring the reﬂectanceﬁeldofahumanface. InProc.ACMSIGGRAPH,145– 156.
+  GOESELE, M., LENSCH, H. P. A., LANG, J., FUCHS, C., AND SEIDEL, H.-P. 2004. DISCO:acquisitionoftranslucentobjects. ACM Trans. Graph. 23, 3, 835–844.
+  TONG, X., WANG, J., LIN, S., GUO, B., AND SHUM, H.-Y. 2005. Modeling and rendering of quasi-homogeneous materials. ACM Trans. Graph. 24, 3, 1054–1061.
+  PEERS, P., VOM BERGE, K., MATUSIK, W., RAMAMOORTHI, R., LAWRENCE, J., RUSINKIEWICZ, S., AND DUTR´ E, P. 2006. A compact factored representation of heterogeneous subsurface scattering. ACM Trans. Graph. 25, 3, 746–753.
+  XU, K., GAO, Y., LI, Y., JU, T., AND HU, S.-M. 2007. Real-time homogenous translucent material editing. Computer Graphics Forum 26, 3, 545–552.
+  WANG, R., CHESLACK-POSTAVA, E., LUEBKE, D., CHEN, Q., HUA, W., PENG, Q., AND BAO, H. 2008. Real-time editing andrelightingofhomogeneoustranslucentmaterials. TheVisual Computer 24, 565–575(11).
+  SONG, Y., TONG, X., PELLACINI, F., AND PEERS, P. 2009. SubEdit: a representation for editing measured heterogeneous subsurface scattering. ACM Transactions on Graphics 28, 3 (Aug.), 31:1–31:9.
+  HANRAHAN, P., AND KRUEGER, W. 1993. Reﬂection from layered surfaces due to subsurface scattering. In Proc. ACM SIGGRAPH, 165–174.
+  DORSEY, J., EDELMAN, A., LEGAKIS, J., JENSEN, H. W., AND PEDERSEN, H. K. 1999. Modeling and rendering of weathered stone. In Proc. ACM SIGGRAPH, 225–234.
+  PHARR, M., AND HANRAHAN, P. M. 2000. Monte Carlo evaluation of non-linear scattering equations for subsurface reﬂection. In Proc. ACM SIGGRAPH, 275–286.
+  DONNER, C., AND JENSEN, H. W. 2005. Lightdiffusioninmultilayered translucent materials. ACM Trans. Graph. 24, 3, 1032– 1039.
+  STAM, J. 1995. Multiplescatteringasadiffusionprocess. InEuro. Rendering Workshop, 41–50.
+  DONNER, C., LAWRENCE, J., RAMAMOORTHI, R., HACHISUKA, T., JENSEN, H. W., AND NAYAR, S. 2009. An empirical bssrdf model. ACM Transactions on Graphics 28, 3 (July), 30:1–30:10.
+  TARIQ, S., GARDNER, A., LLAMAS, I., JONES, A., DEBEVEC, P., AND TURK, G. 2006. Efﬁcientlyestimationofspatiallyvaryingsubsurfacescatteringparameters. In11thInt’lFallWorkshop on Vision, Modeling, and Visualzation 2006, 165–174.
+  JENSEN, H. W., MARSCHNER, S. R., LEVOY, M., AND HANRAHAN, P. 2001. A practical model for subsurface light transport. In Proc. ACM SIGGRAPH, 511–518.
+  DONNER, C., WEYRICH, T., D’EON, E., RAMAMOORTHI, R., AND RUSINKIEWICZ, S. 2008. A layered, heterogeneous reﬂectance model for acquiring and rendering human skin. ACM Trans. Graph. 27, 5, 140.
+  WEYRICH, T., PEERS, P., MATUSIK, W., AND RUSINKIEWICZ, S. 2009. Fabricating microgeometry for custom surface reﬂectance. ACM Trans. Graph. 28, 3, 1–6.
+  GHOSH, A., HAWKINS, T., PEERS, P., FREDERIKSEN, S., AND DEBEVEC, P. 2008. Practical modeling and acquisition of layered facial reﬂectance. ACM Trans. Graph. 27, 5, 139.
+  WANG, J., ZHAO, S., TONG, X., LIN, S., LIN, Z., DONG, Y., GUO, B., AND SHUM, H.-Y. 2008. Modeling and rendering of heterogeneoustranslucentmaterialsusingthediffusionequation. ACM Trans. Graph. 27, 1, 9:1–9:18.
+  WEYRICH, T., PEERS, P., MATUSIK, W., AND RUSINKIEWICZ, S. 2009. Fabricating microgeometry for custom surface reﬂectance. ACM Trans. Graph. 28, 3, 1–6.
+  HAˇSAN, M., FUCHS, M., MATUSIK, W., PFISTER, H., AND RUSINKIEWICZ, S. M. 2010. Physical reproduction of materials with speciﬁed subsurface scattering. ACM Transactions on Graphics 29, 3 (Aug.).
+  BAUMGART, B. G. 1972. Wingededgepolyhedronrepresentation. Tech. rep., Stanford, CA, USA.
+  VILBRANDT, T., MALONE, E., H., L., AND PASKO, A. 2008. Universal desktop fabrication. In Heterogeneous Objects Modelling and Applications, 259–284.

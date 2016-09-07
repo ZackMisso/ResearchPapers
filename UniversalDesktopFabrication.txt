@@ -1,0 +1,39 @@
+UniversalDesktopFabrication
+
+Authors: T. Vilbrandt, E. Malone, H. Lipson, and A. Pasko
+
+There are various representations of object materials
+
+There are discrete representations and continuous representations
+
+Composite representations are representations that have sub-objects
+  whose representations are either discrete or continuous
+
+Hybrid representations can use both discrete and continuous in simultaneous
+  conjunction
+
+Discrete Representations:
+  Voxels
+  Volume Meshes
+
+Continuous Representations:
+  Control Points
+  Geometric Functions
+
+Voxels:
+  Easily parallelizable
+  Simple
+  Good for volumetrically scanned data and complex objects
+
+To Be Continued
+
+Control Points:
+  Continuous, utilizes Bezier, B-Spline volumes and tri-variate NURBS.
+  Requires geometry and composition representation
+  limits complexity, versus usability
+
+To Be Read:
+  Chandru, V., Manohar, S., Prakash, C.: Voxel-based modeling for layered manufacturing. IEEE Computer Graphics and Applications 15, 42 (1995) [
+  Siu, Y.: Modeling and prototyping of heterogeneous solid CAD models. PhD thesis, University of Hong Kong (2003)
+  Kou, X., Tan, S.: A hierarchical representation for heterogeneous object modeling. Computer-Aided Design 37, 307 (2005)
+  Samanta, K., Koc, B.: Feature-based design and material blending for free-form heterogeneous object modeling. Computer-Aided Design 37, 287 (2005)

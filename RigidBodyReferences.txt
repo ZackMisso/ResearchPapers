@@ -1,0 +1,8 @@
+BARAFF, D. 1989. Analytical methods for dynamic simulation of nonpenetratingrigid bodies. Comput. Graph. (Proc. SIGGRAPH 89) 23, 3, 223–232.
+BARAFF,D. 1990.Curvedsurfacesandcoherencefornon-penetratingrigid bodysimulation. Comput. Graph.(Proc. SIGGRAPH 90)24,4,19–28.
+BARAFF, D. 1991. Coping with friction for non-penetrating rigid body simulation. Comput. Graph.(Proc.SIGGRAPH 91) 25,4, 31–40.
+BARAFF, D. 1993. Issuesin computingcontactforcesfor non-penetrating rigidbodies. Algorithmica,10,292–352.
+BARAFF,D. 1994. Fastcontactforcecomputationfornonpenetratingrigid bodies. In Proc. SIGGRAPH 94,23–34.
+BARAFF, D. 1995. Interactive simulation of solid rigid bodies. IEEE Comput.Graph.andAppl. 15,3, 63–75.
+
+http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=503909

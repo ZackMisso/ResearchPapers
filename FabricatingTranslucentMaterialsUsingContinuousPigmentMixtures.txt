@@ -1,0 +1,22 @@
+FabricatingTranslucentMaterialsUsingContinuousPigmentMixtures
+
+Authors: Gross, ETH Zurich
+
+Purpose: to propose a method for practical physical reproduction and design
+  of homogeneous materials with desired subsurface scattering of a given
+  target material.
+
+Subsurface Scattering : Light is emitted at a different angle than it enters
+
+To Be Continued
+
+To Read:
+  JENSEN, H. W., MARSCHNER, S. R., LEVOY, M., AND HANRAHAN, P. 2001. A practical model for subsurface light transport. In Proceedings of ACM SIGGRAPH 2001, Computer Graphics Proceedings, Annual Conference Series, 511–518.
+  DEON, E., AND IRVING, G. 2011. A quantized-diffusion model for rendering translucent materials. ACM Transactions on Graphics 30, 4, 56:1–56:14.
+HAWKINS, T., EINARSSON, P., AND DEBEVEC, P. 2005. Acquisition of time-varying participating media. ACM Transactions on Graphics 24, 3 (Aug.), 812–815.
+DORSEY, J., RUSHMEIER, H., AND SILLION, F. 2008. Digital ModelingofMaterialAppearance. MorganKaufmannPublishers Inc., San Francisco, CA, USA.
+WEYRICH, T., MATUSIK, W., PFISTER, H., BICKEL, B., DONNER, C., TU, C., MCANDLESS, J., LEE, J., NGAN, A., JENSEN, H. W., AND GROSS, M. 2006. Analysis of human faces using a measurement-based skin reﬂectance model. ACM Transactions on Graphics 25, 3 (July), 1013–1024.
+XU, K., GAO, Y., LI, Y., JU, T., AND HU, S.-M. 2007. Real-time homogenous translucent material editing. Computer Graphics Forum 26, 3 (Sept.), 545–552.
+SONG, Y., TONG, X., PELLACINI, F., AND PEERS, P. 2009. Subedit: a representation for editing measured heterogeneous subsurface scattering. ACM Trans. Graph. 28, 3 (July), 31:1– 31:10.
+DONG, Y., WANG, J., PELLACINI, F., TONG, X., AND GUO, B. 2010. Fabricating spatially-varying subsurface scattering. ACM Transactions on Graphics 29, 4 (July), 62:1–62:10.
+HASAN, M., FUCHS, M., MATUSIK, W., PFISTER, H., AND RUSINKIEWICZ, S. 2010. Physical reproduction of materials with speciﬁed subsurface scattering. ACM Transactions on Graphics 29, 4 (July), 61:1–61:10.
