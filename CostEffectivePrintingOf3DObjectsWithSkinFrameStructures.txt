@@ -23,8 +23,6 @@ This paper proposes a solution to keep stability and reduce volume of material u
 
 What is a Multi-Objective Programming Problem in the context of this paper?
 
-
-
 Future Papers ::
   KIRSCH, U. 1989. Optimal topologies of structures. Applied Mechanics Reviews 42, 223–238.
   BENDSØE, M. P., BEN-TAL, A., AND ZOWE, J. 1994. Optimizationmethodsfortrussgeometryandtopologydesign. Structural Optimization 7, 3, 141–159

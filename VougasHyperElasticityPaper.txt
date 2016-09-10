@@ -1,0 +1,66 @@
+How do you write down the potential energy of different elastic materials?
+
+Given the energy of a system we can compute force using the relationship
+  F = -DE (derivative of energy with respect to the objects degrees of
+           freedom)
+
+Energy contains the same information content as the forces, but it is
+  easier to write down since it is just a scalar.
+
+The forces that arise from potential energies must be conservative
+
+As such, Dampening, Friction, and other dissipative phenomena cannot be
+  explained as arising from a potential energy.
+
+A material with the property that its internal forces come from a
+  potential is called HYPERELASTIC.
+
+TO BE READ:
+   SIGGRAPH 2012 tutorial bySifakis and Barbic
+
+Simplest elastic object is a spring in 1D
+  at rest when p = L
+
+Hooke's Law: E = .5 * k * (|p| - L)^2
+
+The energy E depends only on the stretchedness (strain) epsilon of the
+  spring
+
+The energy is zero when epsilon = 0
+
+The energy is nonnegative
+
+energy is minimized when the spring isnt stretched or compressed
+
+The absolute energy doesnt matter. Forces only depend on the relative
+  change in energy DE. But we shift the energy to be 0 when it is at
+  rest
+
+The strain (epsilon) of a spring:
+  epsilon = (|p| - L) / L
+
+^ Cauchy Strain -> simplest formula
+
+Why is epsilon relative to the rest length L instead of the current
+  length p?
+
+It doesn't matter
+
+epsilon is unit less
+
+Green Strain -> epsilon = (p^2 - L^2) / 2L^2
+
+Green strain is used heavily in higher dimensions
+
+From the First Law we know that energy must be a function of epsilon
+
+E(p) = E~(epsilon(p)) for some function
+
+CGAL -> STL -> GCODE
+SLIC3R SKEFORCE
+LIB IGL
+OpenSCAD
+openscad.org/cheatsheet
+Controlling Extrusion Rates* + automating the process
+Repetier -> GCode Visualizer
+Open MPI
