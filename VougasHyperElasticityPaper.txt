@@ -64,3 +64,78 @@ openscad.org/cheatsheet
 Controlling Extrusion Rates* + automating the process
 Repetier -> GCode Visualizer
 Open MPI
+
+plasticity -> permanent damage taken by a deformed object
+
+Two pieces of information are required to specify the
+  behavior of the spring
+    The strain formula used for epsilon
+    The material model, consisting of the coefficients
+
+Elasticity -> Objects that can be defined by some potential
+
+potential is defined in terms of some strain
+
+derivative of potential gives you force
+
+force depends on derivative of the strain
+
+derivative is always taken with respect to degrees of freedom
+
+strain formulation can be chosen freely, but material model must
+  be chosen with respect to that strain
+
+the degrees of freedom of a rubber band are now all possible
+  deformations of Omega.
+
+which is represented using an embedding function
+
+The image of that function is then the deformed rubber band
+
+Tangent vectors on the undeformed rubber band are mapped to
+  the deformed rubber band by the deformation derivative D%
+
+An alternate way to measure stretchedness is to measure the change
+  in the length of tangent vectors drawn at a point
+
+Using the function %, we have infinitely many degrees of freedom
+
+Identity embedding %(xb) = x which just gives Omegab = Omega
+
+Rigid translations of the rubber band %(xb) = xb + t
+
+Uniform stretching of the rubber band to deformed length :
+  %(xb) = xbL/Lb
+
+The goal is to find a function E(%)
+
+A function of a function is called a functional
+
+the energy function is local it can be written as the integral over Omegab
+  of W(xb)dxb
+
+Where W is the energy density
+
+The energy density W at a point xb in Omegab depends only on the
+  stretchedness (strain) epsilon(xb) at that point on the rubber band
+
+The energy density is zero when epsilon = 0
+
+The energy density is non-negative
+
+Main change: energy is now expressed as an integral of a local energy
+  density
+
+Force = D%ofE
+
+What does it mean to take the derivatice of the functional E with respect
+  to a function %?
+
+Intuitively F measures the direction of steepest descent. The way % needs
+  to change to quickly decrease the total energy of the system.
+
+Measuring the stretching og vb is the same as measuring the change in
+  distance between xb and a test point yb = xb + &vb for an infinitesimal
+  parameter &
+
+v = D%(xb)vb i.e. v = partial of % with respect to xb (xb) dot vb
