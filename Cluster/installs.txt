@@ -1,0 +1,87 @@
+cd Documents
+sudo apt install aptitude
+sudo apt install vim
+sudo apt install git
+# git clone all the things
+git clone https://github.com/itsvismay/ElasticBodies.git
+git clone https://github.com/qnzhou/PyMesh.git
+git clone --recursive https://github.com/libigl/libigl.git
+git clone https://github.com/jluttine/suitespares.git
+# install anaconda
+cd ~/Downloads
+download anaconda
+bash Anaconda2-4.2.0-Linux-x86_64.sh
+open new terminal
+conda update --all --yes
+cd ~/Documents
+# more builds
+sudo apt install build-essentials
+sudo apt install libgl1-mesa-dev
+sudo apt install freeglut3-dev
+sudo apt install cmake
+sudo apt install libblas-dev
+sudo apt install libboost-dev
+sudo apt install llibgmp3-dev
+sudo apt install liblapack-dev
+sudo apt install libmpfr4 libmpfr4-dbg
+sudo apt install libopenblas-dev
+sudo apt install libpng12-dev
+sudo apt install python-matplotlib
+sudo apt install python-scipy
+sudo apt install swig
+sudo apt install zlib1g-dev
+sudo apt install libxcursor-dev
+sudo apt install libxi-dev
+sudo apt install libxinerama-dev
+sudo apt install libxrandr-dev
+sudo apt install libcgal-dev
+sudo apt purge libcgal-dev
+sudo apt install libeigen3-dev
+download liblbfgs-1.10
+download cgal
+extract cgal
+cd into cgal
+mkdir build
+cd build
+cmake ..
+sudo make -j4 install
+cd ..
+cd ..
+cd PyMesh
+mkdir build
+cd build
+cmake ..
+sudo make # may be wrong
+cd ..
+cd ..
+cd libigl
+cd external/nanogui
+mkdir build
+cd build
+cmake ..
+sudo make # may be wrong
+cd ..
+cd ..
+cd ..
+cd ..
+cd liblbfgs-1.10
+./configure
+sudo make install
+cd ..
+cd suitesparse
+sudo make
+cd ..
+cd libigl
+cd tutorial
+mkdir build
+cd build
+cmake ..
+sudo make -j4 install
+cd ..
+cd ..
+cd ..
+cd ElasticBodies
+mkdir build
+cd build
+cmake ..
+sudo make -j4 cd ..
