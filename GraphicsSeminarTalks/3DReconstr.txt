@@ -1,0 +1,26 @@
+Laplace-Beltrami operator
+
+trace of the Hessian
+
+Laplace = sum of eiganvalues of the Hessian
+
+Size of eiganvalues infers the energy
+
+Care about only low frequency eiganfunctions
+
+Heat Kernels
+
+Solve for Heat Diffusion
+
+Heat Kernel takes in 2 points and measure value at point y at time t.
+
+How fast does temp reach equilibrium at a point -> gives you info about
+  the local geometry. Relationship between curvature and heat
+
+What is Brownian Motion. And Random Walks
+
+Auto Diffusion Function
+
+Isometric Deformation?
+
+Floyd Warshaw - Graph Kernel

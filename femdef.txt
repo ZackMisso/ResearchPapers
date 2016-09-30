@@ -1,0 +1,69 @@
+Chapter 3: Constitutive models of materials
+
+The mathematical description of the physical traits of a given
+  material is referred to as its constitutive model and include
+  the equations that relate stimuli ( deformations) to the material
+  response (force stress energe)
+
+Isotropic materials response to deformation are independent of the
+  orientation that such deformation is applied in.
+
+It is common for the design process for constitutive models to define
+  certain intermediate quantities (strain measures and invariants)
+  which are derived from F, yet capture the specific traits of the
+  deformation that the energy or stress values depend on more concisely
+  than the deformation gradient itself
+
+A strain measure is intended to be a quantitative descriptor for the
+  severity of a given deformation, i.e. a way to gauge how far this
+  configuration is from a rest configuration.
+
+Green strain remains zero in rest configuration and is translationally
+  and rotationally invariant
+
+R^TR = I
+Even for non-rigid motions, the deformation gradient can be decomposed
+  as F = RS into the product of a rotation matrix R and a symmetric
+  factor S via the polar decomposition.
+
+What is polar Decomposition?
+
+Green strain succeeds in discarding the rotational degrees of freedom,
+  which have no bearing on the severity of deformation, and retains
+  the stretch/shear information in the 6-DOF symmetric factor S.
+
+The price behind this is that the Energy equation becomes nonlinear
+  This leads to nodal functions being quadratic in terms of nodal positions
+
+What is a differential? What is this uppercase delta and :
+
+The small strain tensor e. e = .5(F + F^T) - I
+  also called the infinitesimal strain tensor.
+
+This tensor gives rise to a computationally lightweight constitutive model
+  called linear elasticity. This enables discritizations which have a linear
+  mapping between nodal positions and nodal elastic forces.
+
+This tensor can be considered a reliable measure of deformation for small
+  motions only.
+
+The simplest practical constitutive model is linear elasticity, defined
+  in terms of the strain energy density.
+
+The stress P is a linear function of the deformation gradient. Nodal forces
+  also have a linear dependence on nodal positions.
+
+This model has a low computational cost as opposed to other, nonlinear,
+  materials.
+
+St. Venant-Kirchhoff Model
+
+the small strain tensor is a mere approximation of the rotationally invariant
+  Green Strain E.
+
+You can improve the linear elasticity model by using E, in the place of the
+  strain e.
+
+This is St. Venant-Kirchhoff material and is nonlinear.
+
+to be continued
